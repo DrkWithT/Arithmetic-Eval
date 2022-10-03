@@ -30,10 +30,10 @@ Finally, I use `goto` for a well-defined purpose: jumping out of a nested loop o
 
 Feel free to modify my kinda messy code.
 
-### How to use:
+### How to use outside of Replit:
  1. Go to Shell.
- 2. Enter `make all` to compile my code into a `./main` executable.
- 3. Enter `./main <expression>` to do the math.
-		 - Example: `./main 1.5 + 2.0 x 2.5` gives `6.500000`.
- 4. Enter `make clean` to remove the old executable if you want to modify and rerun this code.
+ 2. Enter `make all` to compile my code into an executable.
+ 3. Enter `./bin/main <expression>` to evaluate some arithmetic expression.
+		 - Example: `./bin/main 1.5 + 2.0 x 2.5` gives `6.500000`.
+ 4. Enter `make clean` to remove the old executable _before_ each rerun. This is good practice!
  5. And rinse and repeat! Have fun ~~debugging if something breaks~~.
