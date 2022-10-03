@@ -9,13 +9,17 @@
  1. The algorithm: [Shunting Yard Algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm)
  2. The evaluator: [Eval RPN](https://www.tutorialspoint.com/evaluate-reverse-polish-notation-in-cplusplus-program)
 
-### Notes:
+### Implementation Notes:
  - Precedence:
 	 - `*, /`: Higher priority.
    - `+, -`: Less Priority.
  - Some operations like signs, powers, and bitwise are not supported yet.
  - Also, parentheses are planned.
  - This was originally a project I sprinted in 2 days on `Replit.com`. Note that folders such as `.ccls-cache` may not be needed.
+
+### Usage Notes:
+ - If using this project on Replit, you must edit the run command within the `.replit` file.
+ - If you see red squiggles on Replit, ignore them. My hand-written Makefile is smart enough. :) 
 
 ### Summary: (PLEASE READ!)
 This C project is a simple math expression evaluator with token checking. It uses the shunting yard algorithm to convert normal math syntax like `1 + 2 x 3` into _reverse polish notation_ (RPN). In this example, the RPN is `1 2 3 x +`. This syntax orders the numbers and operators in the right order to be evaluated by precedence. Then, the RPN is evalutated into an integer using the algorithm in the _Eval RPN_ link.
