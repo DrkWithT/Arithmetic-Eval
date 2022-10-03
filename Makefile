@@ -1,4 +1,5 @@
-all: main
+# Makefile for "Basic Math Evaluator"
+# By: Derek Tan
 
 # compiler vars
 CC := gcc
@@ -13,6 +14,10 @@ SRCS := $(shell find $(SRC_DIR) -name '*.c')
 OBJS := $(patsubst $(SRCS)/%,%.o,$(SRCS))
 
 EXE := $(BIN_DIR)/main
+
+.PHONY: all clean
+
+all: $(EXE)
 
 $(EXE): $(OBJS)
 	$(CC) $(CFLAGS) $^ -o $@
