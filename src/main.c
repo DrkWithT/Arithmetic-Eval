@@ -1,6 +1,6 @@
-#include "./src/num_stack.h"
-#include "./src/tok_queue.h"
-#include "./src/tok_stack.h"
+#include "num_stack.h"
+#include "tok_queue.h"
+#include "tok_stack.h"
 #include <stdio.h>
 #include <string.h>
 
