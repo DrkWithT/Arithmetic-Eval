@@ -1,8 +1,11 @@
 # gitignore for project
 # thelonecodist / DrkWithT (GitHub)
 
+# ignore git and misc. directories
 .git
 .breakpoints
 .ccls-cache
+
+# ignore binaries
 *.o
-main
+./bin/main
