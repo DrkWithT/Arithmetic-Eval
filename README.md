@@ -15,6 +15,7 @@
    - `+, -`: Less Priority.
  - Some operations like signs, powers, and bitwise are not supported yet.
  - Also, parentheses are planned.
+ - This was originally a project I sprinted in 2 days on `Replit.com`. Note that folders such as `.ccls-cache` may not be needed.
 
 ### Summary: (PLEASE READ!)
 This C project is a simple math expression evaluator with token checking. It uses the shunting yard algorithm to convert normal math syntax like `1 + 2 x 3` into _reverse polish notation_ (RPN). In this example, the RPN is `1 2 3 x +`. This syntax orders the numbers and operators in the right order to be evaluated by precedence. Then, the RPN is evalutated into an integer using the algorithm in the _Eval RPN_ link.
@@ -31,4 +32,4 @@ Feel free to modify my kinda messy code.
  3. Enter `./main <expression>` to do the math.
 		 - Example: `./main 1.5 + 2.0 x 2.5` gives `6.500000`.
  4. Enter `make clean` to remove the old executable if you want to modify and rerun this code.
- 5. Aaand rinse and repeat! Have fun ~~debugging if something breaks~~.
+ 5. And rinse and repeat! Have fun ~~debugging if something breaks~~.
