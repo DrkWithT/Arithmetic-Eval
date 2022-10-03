@@ -1,15 +1,24 @@
 all: main
 
-CC = clang
-override CFLAGS += -g -Wno-everything -pthread -lm
+# compiler vars
+CC := gcc
+CFLAGS := -Wall -Werror
 
-SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.c' -print)
+# special directories
+BIN_DIR := ./bin
+HDRS_DIR := ./headers
+SRC_DIR := ./src
 
-main: $(SRCS)
-	$(CC) $(CFLAGS) $(SRCS) -o "$@"
+SRCS := $(shell find $(SRC_DIR) -name '*.c')
+OBJS := $(patsubst $(SRCS)/%,%.o,$(SRCS))
 
-main-debug: $(SRCS)
-	$(CC) $(CFLAGS) -O0 $(SRCS) -o "$@"
+EXE := $(BIN_DIR)/main
+
+$(EXE): $(OBJS)
+	$(CC) $(CFLAGS) $^ -o $@
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -I$(HDRS_DIR)
 
 clean:
-	rm -f main main-debug
+	rm -f $(EXE) *.o
