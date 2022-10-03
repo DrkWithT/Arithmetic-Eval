@@ -1,5 +1,5 @@
-compile = ["make", "-s"]
-run = "./main"
+compile = ["make", "all"]
+run = "./bin/main"
 entrypoint = "README.md"
 hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
 
@@ -7,7 +7,7 @@ hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
 requiredFiles = [".replit", "replit.nix", ".ccls-cache"]
 
 [debugger]
-support = true
+support = false
 
 [debugger.compile]
 command = ["make", "main-debug"]
