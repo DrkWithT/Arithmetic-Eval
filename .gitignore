@@ -1,0 +1,8 @@
+# gitignore for project
+# thelonecodist / DrkWithT (GitHub)
+
+.git
+.breakpoints
+.ccls-cache
+*.o
+main

@@ -1,0 +1,34 @@
+# Basic Math Evaluator
+
+### Contributors:
+ - thelonecodist (just me lol)
+	 - Github: [DrkWithT](https://github.com/DrkWithT)
+	 - Discord: DerkT#0237
+
+### References:
+ 1. The algorithm: [Shunting Yard Algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm)
+ 2. The evaluator: [Eval RPN](https://www.tutorialspoint.com/evaluate-reverse-polish-notation-in-cplusplus-program)
+
+### Notes:
+ - Precedence:
+	 - `*, /`: Higher priority.
+   - `+, -`: Less Priority.
+ - Some operations like signs, powers, and bitwise are not supported yet.
+ - Also, parentheses are planned.
+
+### Summary: (PLEASE READ!)
+This C project is a simple math expression evaluator with token checking. It uses the shunting yard algorithm to convert normal math syntax like `1 + 2 x 3` into _reverse polish notation_ (RPN). In this example, the RPN is `1 2 3 x +`. This syntax orders the numbers and operators in the right order to be evaluated by precedence. Then, the RPN is evalutated into an integer using the algorithm in the _Eval RPN_ link.
+
+Also, keep in mind that since this supports floats, results could be _very_ slightly off. Thus, not all expressions will give an exact result. I will add the exponent operator and parentheses whenever inspiration finds me again.
+
+Finally, I use `goto` for a well-defined purpose: jumping out of a nested loop or if else block to some cleanup code. I know it is disliked, but `goto` does have niche uses.
+
+Feel free to modify my kinda messy code.
+
+### How to use:
+ 1. Go to Shell.
+ 2. Enter `make all` to compile my code into a `./main` executable.
+ 3. Enter `./main <expression>` to do the math.
+		 - Example: `./main 1.5 + 2.0 x 2.5` gives `6.500000`.
+ 4. Enter `make clean` to remove the old executable if you want to modify and rerun this code.
+ 5. Aaand rinse and repeat! Have fun ~~debugging if something breaks~~.
