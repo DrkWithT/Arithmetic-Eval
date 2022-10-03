@@ -24,7 +24,7 @@ struct tok_obj
 
 typedef struct tok_obj Token;
 
-Token *Create_Token(const char *raw_txt, TokenTypes type_code);
+Token *Create_Token(char *raw_txt, TokenTypes type_code);
 
 int Destroy_Token(Token *self);
 

@@ -1,6 +1,6 @@
 #include "token.h"
 
-Token *Create_Token(const char *raw_txt, TokenTypes type_code)
+Token *Create_Token(char *raw_txt, TokenTypes type_code)
 {
 	Token *new_token = malloc(sizeof(Token));
 
