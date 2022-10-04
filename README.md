@@ -3,7 +3,7 @@
 ### Contributors:
  - thelonecodist (just me lol)
 	 - Github: [DrkWithT](https://github.com/DrkWithT)
-	 - Discord: DerkT#0237
+	 - Discord: `DerkT#0237`
 
 ### References:
  1. The algorithm: [Shunting Yard Algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm)
@@ -11,8 +11,8 @@
 
 ### Implementation Notes:
  - Precedence:
-	 - `*, /`: Higher priority.
-   - `+, -`: Less Priority.
+	 - `x, /`: Higher priority for multiply and divide.
+   - `+, -`: Less Priority for add and subtract.
  - Some operations like signs, powers, and bitwise are not supported yet.
  - Also, parentheses are planned.
  - This was originally a project I sprinted in 2 days on `Replit.com`. Note that folders such as `.ccls-cache` may not be needed.
